@@ -1,0 +1,250 @@
+/* Classic Mustangs Website Styles */
+/* Color Scheme:
+   Primary: #000500 (Dark)
+   Secondary: #FFFFFF (White)
+   Accent 1: #C1C1C1 (Light Gray)
+   Accent 2: #1481BA (Blue)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000500;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000500;
+    color: #FFFFFF;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1481BA;
+}
+
+.header-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-section {
+    width: 100%;
+}
+
+.image-title {
+    color: #1481BA;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    background-color: #C1C1C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.header-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero {
+    background-color: #1481BA;
+    color: #FFFFFF;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content {
+    padding: 3rem 0;
+}
+
+.content h2 {
+    color: #000500;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #1481BA;
+    padding-bottom: 0.5rem;
+}
+
+.content h3 {
+    color: #1481BA;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    margin-bottom: 1rem;
+    color: #000500;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 2px solid #C1C1C1;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(20, 129, 186, 0.3);
+}
+
+.card h3 {
+    color: #1481BA;
+    margin-top: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #1481BA;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #0d5f8a;
+}
+
+.highlight-box {
+    background-color: #C1C1C1;
+    padding: 2rem;
+    border-left: 5px solid #1481BA;
+    margin: 2rem 0;
+}
+
+.purpose-image {
+    width: 100%;
+    background-color: #C1C1C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    margin: 2rem 0;
+}
+
+.purpose-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    background-color: #000500;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #1481BA;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
