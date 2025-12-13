@@ -253,3 +253,12 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+.hero-img {
+  max-width: 80%;   /* controla el tamaño */
+  height: auto;
+  display: block;
+  margin: 2rem auto; /* centra horizontalmente */
+  border: 5px solid #FFFFFF; /* opcional: borde blanco para destacar */
+  border-radius: 8px;        /* opcional: esquinas redondeadas */
+}
